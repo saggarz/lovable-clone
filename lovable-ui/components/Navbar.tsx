@@ -9,8 +9,12 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 text-xl sm:text-2xl font-semibold text-black hover:opacity-80 transition-opacity"
         >
-          {/* Simple gradient square to mimic Soch logo */}
-          <span className="inline-block w-5 h-5 sm:w-6 sm:h-6 rounded-sm bg-gradient-to-br from-orange-400 via-pink-500 to-blue-500" />
+          {/* Soch logo - innovation and creativity */}
+          <img
+            src="https://images.pexels.com/photos/390426/pexels-photo-390426.png"
+            alt="Soch Logo - Innovation & Creativity"
+            className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+          />
           Soch
         </a>
 
