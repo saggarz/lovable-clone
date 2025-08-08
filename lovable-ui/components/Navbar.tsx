@@ -41,7 +41,7 @@ export default function Navbar() {
       </div>
 
       {/* Auth buttons */}
-      <div className="flex items-center gap-2 sm:gap-4 text-sm">
+      <div className="flex items-center gap-1 sm:gap-2 md:gap-4 text-sm">
         <a
           href="#"
           className="text-black/80 hover:text-black transition-all duration-200 hidden sm:block font-display font-medium hover:scale-105"
@@ -50,9 +50,10 @@ export default function Navbar() {
         </a>
         <a
           href="#"
-          className="px-4 py-2.5 sm:px-6 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-display font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white/20"
+          className="px-2 py-2 sm:px-4 sm:py-2.5 md:px-6 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-lg sm:rounded-xl font-display font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white/20 text-xs sm:text-sm whitespace-nowrap"
         >
-          Start Building
+          <span className="hidden sm:inline">Start Building</span>
+          <span className="sm:hidden">Start</span>
         </a>
       </div>
     </nav>
