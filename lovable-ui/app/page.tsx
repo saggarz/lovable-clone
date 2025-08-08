@@ -33,7 +33,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-            Transform Ideas into Reality with Soch
+            Transform Ideas into Reality with SOCH
           </h1>
           <h3 className="text-lg sm:text-xl md:text-2xl text-black font-semibold mb-8 sm:mb-12 max-w-2xl mx-auto drop-shadow-md">
             AI-POWERED DEVELOPMENT PLATFORM
