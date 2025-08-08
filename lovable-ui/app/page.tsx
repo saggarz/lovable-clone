@@ -49,7 +49,7 @@ export default function Home() {
 
           {/* Input Section */}
           <div className="relative max-w-2xl mx-auto px-2 sm:px-4 w-full">
-            <div className="relative flex flex-col sm:flex-row items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl p-2">
+            <div className="relative flex flex-col sm:flex-row items-stretch sm:items-center bg-white/95 backdrop-blur-sm rounded-xl sm:rounded-2xl border-2 border-orange-200 shadow-2xl p-2 sm:p-2 w-full">
               {/* Textarea */}
               <textarea
                 placeholder="Describe your dream project and watch it come alive..."
@@ -61,7 +61,7 @@ export default function Home() {
                     handleGenerate();
                   }
                 }}
-                className="flex-1 w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base sm:text-lg font-display resize-none min-h-[100px] sm:min-h-[120px] max-h-[200px] sm:max-h-[300px] leading-relaxed"
+                className="flex-1 w-full px-3 sm:px-4 md:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-sm sm:text-base md:text-lg font-display resize-none min-h-[80px] sm:min-h-[100px] md:min-h-[120px] max-h-[150px] sm:max-h-[200px] md:max-h-[300px] leading-relaxed"
                 rows={3}
               />
 
@@ -69,7 +69,7 @@ export default function Home() {
               <button
                 onClick={handleGenerate}
                 disabled={!prompt.trim()}
-                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-3 p-3 w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 group shadow-xl hover:shadow-2xl hover:scale-105 font-display font-semibold"
+                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-2 md:mr-3 p-2.5 sm:p-3 w-full sm:w-auto min-w-[44px] sm:min-w-[48px] bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-lg sm:rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 group shadow-xl hover:shadow-2xl hover:scale-105 font-display font-semibold flex items-center justify-center"
               >
                 {false ? (
                   <svg
@@ -94,7 +94,7 @@ export default function Home() {
                   </svg>
                 ) : (
                   <svg
-                    className="h-5 w-5 group-hover:scale-110 transition-transform"
+                    className="h-4 w-4 sm:h-5 sm:w-5 group-hover:scale-110 transition-transform"
                     fill="none"
                     viewBox="0 0 24 24"
                     stroke="currentColor"
