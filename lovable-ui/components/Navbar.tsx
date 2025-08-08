@@ -20,18 +20,22 @@ export default function Navbar() {
           </span>
         </a>
 
-        <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm text-black/80">
-          <a href="#" className="hover:text-black transition-colors">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm font-display font-medium text-black/80">
+          <a href="#" className="hover:text-black transition-all duration-200 hover:scale-105 relative group">
             Developers
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-green-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#" className="hover:text-black transition-colors">
+          <a href="#" className="hover:text-black transition-all duration-200 hover:scale-105 relative group">
             Business
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-green-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#" className="hover:text-black transition-colors">
+          <a href="#" className="hover:text-black transition-all duration-200 hover:scale-105 relative group">
             Tutorials
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-green-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
-          <a href="#" className="hover:text-black transition-colors">
+          <a href="#" className="hover:text-black transition-all duration-200 hover:scale-105 relative group">
             Showcase
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-500 to-green-500 transition-all duration-300 group-hover:w-full"></span>
           </a>
         </div>
       </div>
