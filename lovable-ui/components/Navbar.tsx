@@ -12,10 +12,10 @@ export default function Navbar() {
           {/* Soch logo - innovation and creativity */}
           <img
             src="https://images.pexels.com/photos/390426/pexels-photo-390426.png"
-            alt="Soch Logo - Innovation & Creativity"
+            alt="SOCH Logo - Innovation & Creativity"
             className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
           />
-          Soch
+          SOCH
         </a>
 
         <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm text-black/80">
