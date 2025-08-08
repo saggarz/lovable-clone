@@ -16,38 +16,43 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen relative overflow-hidden bg-black">
+    <main className="min-h-screen relative overflow-hidden">
       {/* Navbar */}
       <Navbar />
 
-      {/* Background image */}
+      {/* Indian flag gradient background */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/gradient.png')" }}
+        className="absolute inset-0 z-0"
+        style={{
+          background: "linear-gradient(180deg, #FF9933 0%, #FFFFFF 50%, #138808 100%)"
+        }}
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
-          <h1 className="text-4xl sm:text-4xl md:text-4xl font-bold text-white mb-6">
-            Build something with Lovable-clone
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-black mb-4 sm:mb-6 leading-tight tracking-tight">
+            Transform Ideas into
+            <span className="block bg-gradient-to-r from-orange-600 via-red-500 to-green-600 bg-clip-text text-transparent animate-pulse">Reality with SOCH</span>
           </h1>
-          <h3 className="text-xl sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            BUILT WITH CLAUDE CODE
+          <h3 className="text-xl sm:text-2xl md:text-3xl text-black/90 font-display font-bold mb-8 sm:mb-12 max-w-2xl mx-auto tracking-widest">
+            <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">
+              AI-POWERED DEVELOPMENT PLATFORM
+            </span>
           </h3>
 
-          <p className="text-xl sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Turn your ideas into production-ready code in minutes. Powered by
-            Claude's advanced AI capabilities.
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 mb-8 sm:mb-12 max-w-3xl mx-auto font-display font-medium leading-relaxed px-4">
+            From concept to code in seconds. Experience the future of intelligent
+            development with AI that <em className="font-semibold text-black">understands your vision.</em>
           </p>
 
           {/* Input Section */}
-          <div className="relative max-w-2xl mx-auto">
-            <div className="relative flex items-center bg-black rounded-2xl border border-gray-800 shadow-2xl px-2">
+          <div className="relative max-w-2xl mx-auto px-4">
+            <div className="relative flex flex-col sm:flex-row items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl p-2">
               {/* Textarea */}
               <textarea
-                placeholder="Ask Lovable to create a prototype..."
+                placeholder="Describe your dream project and watch it come alive..."
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
                 onKeyDown={(e) => {
@@ -56,7 +61,7 @@ export default function Home() {
                     handleGenerate();
                   }
                 }}
-                className="flex-1 px-5 py-4 bg-transparent text-white placeholder-gray-500 focus:outline-none text-lg resize-none min-h-[120px] max-h-[300px]"
+                className="flex-1 w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base sm:text-lg font-display resize-none min-h-[100px] sm:min-h-[120px] max-h-[200px] sm:max-h-[300px] leading-relaxed"
                 rows={3}
               />
 
@@ -64,7 +69,7 @@ export default function Home() {
               <button
                 onClick={handleGenerate}
                 disabled={!prompt.trim()}
-                className="flex-shrink-0 mr-3 p-3 bg-gray-800 hover:bg-gray-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group"
+                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-3 p-3 w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 group shadow-xl hover:shadow-2xl hover:scale-105 font-display font-semibold"
               >
                 {false ? (
                   <svg
@@ -106,44 +111,44 @@ export default function Home() {
             </div>
 
             {/* Example prompts */}
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-2 sm:gap-3 px-2">
               <button
                 onClick={() =>
                   setPrompt(
-                    "Create a modern blog website with markdown support"
+                    "Build a stunning blog platform with rich content features"
                   )
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
-                Blog website
+                Content Hub
               </button>
               <button
                 onClick={() =>
-                  setPrompt("Build a portfolio website with project showcase")
+                  setPrompt("Create a professional portfolio with interactive galleries")
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
-                Portfolio site
-              </button>
-              <button
-                onClick={() =>
-                  setPrompt(
-                    "Create an e-commerce product catalog with shopping cart"
-                  )
-                }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
-              >
-                E-commerce
+                Creative Showcase
               </button>
               <button
                 onClick={() =>
                   setPrompt(
-                    "Build a dashboard with charts and data visualization"
+                    "Design a complete online store with payment integration"
                   )
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
-                Dashboard
+                Digital Store
+              </button>
+              <button
+                onClick={() =>
+                  setPrompt(
+                    "Develop analytics dashboard with real-time insights"
+                  )
+                }
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
+              >
+                Analytics Hub
               </button>
             </div>
           </div>
