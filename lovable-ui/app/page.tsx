@@ -33,15 +33,15 @@ export default function Home() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-            Build something with Soch-clone
+            Transform Ideas into Reality with Soch
           </h1>
           <h3 className="text-lg sm:text-xl md:text-2xl text-black font-semibold mb-8 sm:mb-12 max-w-2xl mx-auto drop-shadow-md">
-            BUILT WITH CLAUDE CODE
+            AI-POWERED DEVELOPMENT PLATFORM
           </h3>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-8 sm:mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm px-4">
-            Turn your ideas into production-ready code in minutes. Powered by
-            Claude's advanced AI capabilities.
+            From concept to code in seconds. Experience the future of intelligent
+            development with AI that understands your vision.
           </p>
 
           {/* Input Section */}
@@ -49,7 +49,7 @@ export default function Home() {
             <div className="relative flex flex-col sm:flex-row items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl p-2">
               {/* Textarea */}
               <textarea
-                placeholder="Ask Soch to create a prototype..."
+                placeholder="Describe your dream project and watch it come alive..."
                 value={prompt}
                 onChange={(e) => setPrompt(e.target.value)}
                 onKeyDown={(e) => {
@@ -112,40 +112,40 @@ export default function Home() {
               <button
                 onClick={() =>
                   setPrompt(
-                    "Create a modern blog website with markdown support"
+                    "Build a stunning blog platform with rich content features"
                   )
                 }
                 className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
-                Blog website
+                Content Hub
               </button>
               <button
                 onClick={() =>
-                  setPrompt("Build a portfolio website with project showcase")
+                  setPrompt("Create a professional portfolio with interactive galleries")
                 }
                 className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
-                Portfolio site
-              </button>
-              <button
-                onClick={() =>
-                  setPrompt(
-                    "Create an e-commerce product catalog with shopping cart"
-                  )
-                }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
-              >
-                E-commerce
+                Creative Showcase
               </button>
               <button
                 onClick={() =>
                   setPrompt(
-                    "Build a dashboard with charts and data visualization"
+                    "Design a complete online store with payment integration"
                   )
                 }
                 className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
-                Dashboard
+                Digital Store
+              </button>
+              <button
+                onClick={() =>
+                  setPrompt(
+                    "Develop analytics dashboard with real-time insights"
+                  )
+                }
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
+              >
+                Analytics Hub
               </button>
             </div>
           </div>
