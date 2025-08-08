@@ -42,9 +42,9 @@ export default function Home() {
             </span>
           </h3>
 
-          <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-8 sm:mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm px-4">
+          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 mb-8 sm:mb-12 max-w-3xl mx-auto font-display font-medium leading-relaxed px-4">
             From concept to code in seconds. Experience the future of intelligent
-            development with AI that understands your vision.
+            development with AI that <em className="font-semibold text-black">understands your vision.</em>
           </p>
 
           {/* Input Section */}
