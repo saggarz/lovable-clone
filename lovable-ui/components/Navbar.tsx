@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <nav className="absolute top-0 left-0 right-0 z-20 flex items-center justify-between px-4 sm:px-6 py-4">
       {/* Logo & main navigation */}
-      <div className="flex items-center gap-6 lg:gap-10">
+      <div className="flex items-center gap-4 md:gap-6 lg:gap-10">
         <a
           href="/"
           className="flex items-center gap-2 text-xl sm:text-2xl font-semibold text-black hover:opacity-80 transition-opacity"
