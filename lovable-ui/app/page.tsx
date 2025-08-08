@@ -29,24 +29,24 @@ export default function Home() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-20 sm:pt-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6 drop-shadow-lg">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 drop-shadow-lg leading-tight">
             Build something with Soch-clone
           </h1>
-          <h3 className="text-xl sm:text-2xl text-black font-semibold mb-12 max-w-2xl mx-auto drop-shadow-md">
+          <h3 className="text-lg sm:text-xl md:text-2xl text-black font-semibold mb-8 sm:mb-12 max-w-2xl mx-auto drop-shadow-md">
             BUILT WITH CLAUDE CODE
           </h3>
 
-          <p className="text-lg sm:text-xl text-gray-800 mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm">
+          <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-8 sm:mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm px-4">
             Turn your ideas into production-ready code in minutes. Powered by
             Claude's advanced AI capabilities.
           </p>
 
           {/* Input Section */}
-          <div className="relative max-w-2xl mx-auto">
-            <div className="relative flex items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl px-2">
+          <div className="relative max-w-2xl mx-auto px-4">
+            <div className="relative flex flex-col sm:flex-row items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl p-2">
               {/* Textarea */}
               <textarea
                 placeholder="Ask Soch to create a prototype..."
@@ -58,7 +58,7 @@ export default function Home() {
                     handleGenerate();
                   }
                 }}
-                className="flex-1 px-5 py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-lg resize-none min-h-[120px] max-h-[300px]"
+                className="flex-1 w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base sm:text-lg resize-none min-h-[100px] sm:min-h-[120px] max-h-[200px] sm:max-h-[300px]"
                 rows={3}
               />
 
@@ -66,7 +66,7 @@ export default function Home() {
               <button
                 onClick={handleGenerate}
                 disabled={!prompt.trim()}
-                className="flex-shrink-0 mr-3 p-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group shadow-lg"
+                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-3 p-3 w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group shadow-lg"
               >
                 {false ? (
                   <svg
@@ -108,14 +108,14 @@ export default function Home() {
             </div>
 
             {/* Example prompts */}
-            <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-2 sm:gap-3 px-2">
               <button
                 onClick={() =>
                   setPrompt(
                     "Create a modern blog website with markdown support"
                   )
                 }
-                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
                 Blog website
               </button>
@@ -123,7 +123,7 @@ export default function Home() {
                 onClick={() =>
                   setPrompt("Build a portfolio website with project showcase")
                 }
-                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
                 Portfolio site
               </button>
@@ -133,7 +133,7 @@ export default function Home() {
                     "Create an e-commerce product catalog with shopping cart"
                   )
                 }
-                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
                 E-commerce
               </button>
@@ -143,7 +143,7 @@ export default function Home() {
                     "Build a dashboard with charts and data visualization"
                   )
                 }
-                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
               >
                 Dashboard
               </button>
