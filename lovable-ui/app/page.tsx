@@ -69,7 +69,7 @@ export default function Home() {
               <button
                 onClick={handleGenerate}
                 disabled={!prompt.trim()}
-                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-3 p-3 w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group shadow-lg"
+                className="flex-shrink-0 mt-2 sm:mt-0 sm:mr-3 p-3 w-full sm:w-auto bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-300 group shadow-xl hover:shadow-2xl hover:scale-105 font-display font-semibold"
               >
                 {false ? (
                   <svg
