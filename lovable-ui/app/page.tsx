@@ -36,8 +36,10 @@ export default function Home() {
             Transform Ideas into
             <span className="block bg-gradient-to-r from-orange-600 via-red-500 to-green-600 bg-clip-text text-transparent animate-pulse">Reality with SOCH</span>
           </h1>
-          <h3 className="text-lg sm:text-xl md:text-2xl text-black font-semibold mb-8 sm:mb-12 max-w-2xl mx-auto drop-shadow-md">
-            AI-POWERED DEVELOPMENT PLATFORM
+          <h3 className="text-xl sm:text-2xl md:text-3xl text-black/90 font-display font-bold mb-8 sm:mb-12 max-w-2xl mx-auto tracking-widest">
+            <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">
+              AI-POWERED DEVELOPMENT PLATFORM
+            </span>
           </h3>
 
           <p className="text-base sm:text-lg md:text-xl text-gray-800 mb-8 sm:mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm px-4">
