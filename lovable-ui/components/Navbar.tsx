@@ -7,15 +7,17 @@ export default function Navbar() {
       <div className="flex items-center gap-4 md:gap-6 lg:gap-10">
         <a
           href="/"
-          className="flex items-center gap-2 text-xl sm:text-2xl font-semibold text-black hover:opacity-80 transition-opacity"
+          className="flex items-center gap-3 text-2xl sm:text-3xl font-display font-bold text-black hover:opacity-80 transition-all duration-300 hover:scale-105"
         >
-          {/* Soch logo - innovation and creativity */}
+          {/* SOCH logo - innovation and creativity */}
           <img
             src="https://images.pexels.com/photos/390426/pexels-photo-390426.png"
             alt="SOCH Logo - Innovation & Creativity"
-            className="w-6 h-6 sm:w-8 sm:h-8 object-contain"
+            className="w-7 h-7 sm:w-9 sm:h-9 object-contain filter drop-shadow-md"
           />
-          SOCH
+          <span className="bg-gradient-to-r from-orange-600 via-red-500 to-green-600 bg-clip-text text-transparent font-extrabold tracking-wide">
+            SOCH
+          </span>
         </a>
 
         <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm text-black/80">
