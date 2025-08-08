@@ -14,7 +14,7 @@ export default function Navbar() {
           Soch
         </a>
 
-        <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm text-black/80">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8 text-sm text-black/80">
           <a href="#" className="hover:text-black transition-colors">
             Developers
           </a>
