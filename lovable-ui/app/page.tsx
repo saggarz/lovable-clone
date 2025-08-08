@@ -115,7 +115,7 @@ export default function Home() {
                     "Create a modern blog website with markdown support"
                   )
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
               >
                 Blog website
               </button>
@@ -123,7 +123,7 @@ export default function Home() {
                 onClick={() =>
                   setPrompt("Build a portfolio website with project showcase")
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
               >
                 Portfolio site
               </button>
@@ -133,7 +133,7 @@ export default function Home() {
                     "Create an e-commerce product catalog with shopping cart"
                   )
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
               >
                 E-commerce
               </button>
@@ -143,7 +143,7 @@ export default function Home() {
                     "Build a dashboard with charts and data visualization"
                   )
                 }
-                className="px-4 py-2 text-sm text-gray-400 bg-gray-800/50 backdrop-blur-sm rounded-full hover:bg-gray-700/50 transition-colors border border-gray-700"
+                className="px-6 py-3 text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg"
               >
                 Dashboard
               </button>
