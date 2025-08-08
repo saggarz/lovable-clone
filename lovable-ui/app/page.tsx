@@ -32,14 +32,14 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
-          <h1 className="text-4xl sm:text-4xl md:text-4xl font-bold text-white mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6 drop-shadow-lg">
             Build something with Lovable-clone
           </h1>
-          <h3 className="text-xl sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <h3 className="text-xl sm:text-2xl text-black font-semibold mb-12 max-w-2xl mx-auto drop-shadow-md">
             BUILT WITH CLAUDE CODE
           </h3>
 
-          <p className="text-xl sm:text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-gray-800 mb-12 max-w-2xl mx-auto font-medium drop-shadow-sm">
             Turn your ideas into production-ready code in minutes. Powered by
             Claude's advanced AI capabilities.
           </p>
