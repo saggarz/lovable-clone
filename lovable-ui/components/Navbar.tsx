@@ -16,16 +16,16 @@ export default function Navbar() {
 
         <div className="hidden lg:flex items-center gap-6 xl:gap-8 text-sm text-black/80">
           <a href="#" className="hover:text-black transition-colors">
-            Community
+            Developers
           </a>
           <a href="#" className="hover:text-black transition-colors">
-            Enterprise
+            Business
           </a>
           <a href="#" className="hover:text-black transition-colors">
-            Learn
+            Tutorials
           </a>
           <a href="#" className="hover:text-black transition-colors">
-            Shipped
+            Showcase
           </a>
         </div>
       </div>
@@ -36,13 +36,13 @@ export default function Navbar() {
           href="#"
           className="text-black/80 hover:text-black transition-colors hidden sm:block"
         >
-          Log in
+          Sign In
         </a>
         <a
           href="#"
           className="px-3 py-2 sm:px-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md border border-orange-200"
         >
-          Get started
+          Start Building
         </a>
       </div>
     </nav>
