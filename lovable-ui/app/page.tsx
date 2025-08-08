@@ -29,26 +29,26 @@ export default function Home() {
       />
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-24">
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-3 sm:px-4 md:px-6 lg:px-8 pt-20 sm:pt-24 md:pt-28 pb-8 sm:pb-12">
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-black mb-4 sm:mb-6 leading-tight tracking-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-black text-black mb-3 sm:mb-4 md:mb-6 leading-tight tracking-tight px-2">
             Transform Ideas into
             <span className="block bg-gradient-to-r from-orange-600 via-red-500 to-green-600 bg-clip-text text-transparent animate-pulse">Reality with SOCH</span>
           </h1>
-          <h3 className="text-xl sm:text-2xl md:text-3xl text-black/90 font-display font-bold mb-8 sm:mb-12 max-w-2xl mx-auto tracking-widest">
+          <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-black/90 font-display font-bold mb-6 sm:mb-8 md:mb-12 max-w-2xl mx-auto tracking-widest px-2">
             <span className="bg-gradient-to-r from-gray-800 to-black bg-clip-text text-transparent">
               AI-POWERED DEVELOPMENT PLATFORM
             </span>
           </h3>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-800 mb-8 sm:mb-12 max-w-3xl mx-auto font-display font-medium leading-relaxed px-4">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-800 mb-6 sm:mb-8 md:mb-12 max-w-3xl mx-auto font-display font-medium leading-relaxed px-2 sm:px-4">
             From concept to code in seconds. Experience the future of intelligent
             development with AI that <em className="font-semibold text-black">understands your vision.</em>
           </p>
 
           {/* Input Section */}
-          <div className="relative max-w-2xl mx-auto px-4">
+          <div className="relative max-w-2xl mx-auto px-2 sm:px-4 w-full">
             <div className="relative flex flex-col sm:flex-row items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl p-2">
               {/* Textarea */}
               <textarea
@@ -111,14 +111,14 @@ export default function Home() {
             </div>
 
             {/* Example prompts */}
-            <div className="mt-6 sm:mt-8 flex flex-wrap justify-center gap-2 sm:gap-3 px-2">
+            <div className="mt-4 sm:mt-6 md:mt-8 flex flex-wrap justify-center gap-2 sm:gap-3 px-1 sm:px-2 max-w-full overflow-x-auto">
               <button
                 onClick={() =>
                   setPrompt(
                     "Build a stunning blog platform with rich content features"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
+                className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300 whitespace-nowrap flex-shrink-0"
               >
                 Content Hub
               </button>
@@ -126,7 +126,7 @@ export default function Home() {
                 onClick={() =>
                   setPrompt("Create a professional portfolio with interactive galleries")
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
+                className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300 whitespace-nowrap flex-shrink-0"
               >
                 Creative Showcase
               </button>
@@ -136,7 +136,7 @@ export default function Home() {
                     "Design a complete online store with payment integration"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
+                className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300 whitespace-nowrap flex-shrink-0"
               >
                 Digital Store
               </button>
@@ -146,7 +146,7 @@ export default function Home() {
                     "Develop analytics dashboard with real-time insights"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
+                className="px-3 sm:px-4 md:px-6 py-2 sm:py-2.5 md:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300 whitespace-nowrap flex-shrink-0"
               >
                 Analytics Hub
               </button>
