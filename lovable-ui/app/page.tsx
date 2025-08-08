@@ -61,7 +61,7 @@ export default function Home() {
                     handleGenerate();
                   }
                 }}
-                className="flex-1 w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base sm:text-lg resize-none min-h-[100px] sm:min-h-[120px] max-h-[200px] sm:max-h-[300px]"
+                className="flex-1 w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-base sm:text-lg font-display resize-none min-h-[100px] sm:min-h-[120px] max-h-[200px] sm:max-h-[300px] leading-relaxed"
                 rows={3}
               />
 
