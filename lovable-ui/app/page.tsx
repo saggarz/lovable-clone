@@ -46,7 +46,7 @@ export default function Home() {
 
           {/* Input Section */}
           <div className="relative max-w-2xl mx-auto">
-            <div className="relative flex items-center bg-black rounded-2xl border border-gray-800 shadow-2xl px-2">
+            <div className="relative flex items-center bg-white/95 backdrop-blur-sm rounded-2xl border-2 border-orange-200 shadow-2xl px-2">
               {/* Textarea */}
               <textarea
                 placeholder="Ask Lovable to create a prototype..."
@@ -58,7 +58,7 @@ export default function Home() {
                     handleGenerate();
                   }
                 }}
-                className="flex-1 px-5 py-4 bg-transparent text-white placeholder-gray-500 focus:outline-none text-lg resize-none min-h-[120px] max-h-[300px]"
+                className="flex-1 px-5 py-4 bg-transparent text-gray-800 placeholder-gray-500 focus:outline-none text-lg resize-none min-h-[120px] max-h-[300px]"
                 rows={3}
               />
 
@@ -66,7 +66,7 @@ export default function Home() {
               <button
                 onClick={handleGenerate}
                 disabled={!prompt.trim()}
-                className="flex-shrink-0 mr-3 p-3 bg-gray-800 hover:bg-gray-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-gray-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group"
+                className="flex-shrink-0 mr-3 p-3 bg-orange-600 hover:bg-orange-700 text-white rounded-xl focus:outline-none focus:ring-2 focus:ring-orange-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 group shadow-lg"
               >
                 {false ? (
                   <svg
