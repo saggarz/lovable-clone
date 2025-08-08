@@ -16,14 +16,16 @@ export default function Home() {
   };
 
   return (
-    <main className="min-h-screen relative overflow-hidden bg-black">
+    <main className="min-h-screen relative overflow-hidden">
       {/* Navbar */}
       <Navbar />
 
-      {/* Background image */}
+      {/* Indian flag background */}
       <div
-        className="absolute inset-0 z-0 bg-cover bg-center"
-        style={{ backgroundImage: "url('/gradient.png')" }}
+        className="absolute inset-0 z-0"
+        style={{
+          background: "linear-gradient(180deg, #FF9933 0%, #FF9933 33.33%, #FFFFFF 33.33%, #FFFFFF 66.66%, #138808 66.66%, #138808 100%)"
+        }}
       />
 
       {/* Content */}
