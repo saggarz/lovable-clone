@@ -32,8 +32,9 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8 pt-16 sm:pt-20 md:pt-24">
         <div className="max-w-4xl mx-auto text-center">
           {/* Hero Section */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-4 sm:mb-6 drop-shadow-lg leading-tight">
-            Transform Ideas into Reality with SOCH
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-black text-black mb-4 sm:mb-6 leading-tight tracking-tight">
+            Transform Ideas into
+            <span className="block bg-gradient-to-r from-orange-600 via-red-500 to-green-600 bg-clip-text text-transparent animate-pulse">Reality with SOCH</span>
           </h1>
           <h3 className="text-lg sm:text-xl md:text-2xl text-black font-semibold mb-8 sm:mb-12 max-w-2xl mx-auto drop-shadow-md">
             AI-POWERED DEVELOPMENT PLATFORM
