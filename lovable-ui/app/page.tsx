@@ -118,7 +118,7 @@ export default function Home() {
                     "Build a stunning blog platform with rich content features"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
                 Content Hub
               </button>
@@ -126,7 +126,7 @@ export default function Home() {
                 onClick={() =>
                   setPrompt("Create a professional portfolio with interactive galleries")
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
                 Creative Showcase
               </button>
@@ -136,7 +136,7 @@ export default function Home() {
                     "Design a complete online store with payment integration"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
                 Digital Store
               </button>
@@ -146,7 +146,7 @@ export default function Home() {
                     "Develop analytics dashboard with real-time insights"
                   )
                 }
-                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-medium text-gray-700 bg-white/80 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-200 border border-orange-200 shadow-md hover:shadow-lg touch-manipulation"
+                className="px-4 sm:px-6 py-2 sm:py-3 text-xs sm:text-sm font-display font-semibold text-gray-700 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-105 transition-all duration-300 border border-orange-200 shadow-lg hover:shadow-xl touch-manipulation hover:border-orange-300"
               >
                 Analytics Hub
               </button>
