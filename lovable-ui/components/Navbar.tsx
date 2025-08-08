@@ -44,13 +44,13 @@ export default function Navbar() {
       <div className="flex items-center gap-2 sm:gap-4 text-sm">
         <a
           href="#"
-          className="text-black/80 hover:text-black transition-colors hidden sm:block"
+          className="text-black/80 hover:text-black transition-all duration-200 hidden sm:block font-display font-medium hover:scale-105"
         >
           Sign In
         </a>
         <a
           href="#"
-          className="px-3 py-2 sm:px-4 bg-white text-black rounded-lg font-semibold hover:bg-gray-100 transition-colors shadow-md border border-orange-200"
+          className="px-4 py-2.5 sm:px-6 bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white rounded-xl font-display font-bold hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl border-2 border-white/20"
         >
           Start Building
         </a>
